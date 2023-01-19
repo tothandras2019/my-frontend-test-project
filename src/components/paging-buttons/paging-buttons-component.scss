@@ -1,0 +1,50 @@
+.paging-buttons-container {
+  position: relative;
+  width: 120px;
+  height: 25px;
+  display: flex;
+  margin-bottom: 30px;
+  gap: 5px;
+
+  input[type='button'] {
+    position: absolute;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    height: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(65, 120, 209);
+    z-index: 2;
+    font-size: 20px;
+
+    &.left-prev {
+      color: rgb(199, 219, 199);
+    }
+
+    &.right-next {
+      color: rgb(199, 219, 199);
+    }
+
+    &:active {
+      background-color: grey;
+      top: 4px;
+    }
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    top: 4px;
+    left: 0;
+    width: 120px;
+    height: 35px;
+    background-color: rgb(37, 66, 112);
+    border-radius: 30px;
+    z-index: 1;
+  }
+}

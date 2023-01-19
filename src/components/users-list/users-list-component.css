@@ -1,0 +1,32 @@
+.users-list-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  min-height: 45%;
+  border-radius: 5px;
+  background-color: rgb(135, 193, 237);
+}
+.users-list-table .users-list-contents {
+  box-sizing: border-box;
+  padding: 20px;
+}
+.users-list-table .users-list-contents .user-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0px;
+  width: 100%;
+}
+.users-list-table .users-list-contents .user-row.column-head p {
+  font-weight: 900;
+}
+.users-list-table .users-list-contents .user-row p {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(118, 147, 170);
+  padding: 5px 10px;
+  box-sizing: border-box;
+  margin: 0;
+  width: 290px;
+}/*# sourceMappingURL=users-list-component.css.map */
