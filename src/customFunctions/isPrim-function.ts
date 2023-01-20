@@ -1,5 +1,5 @@
-export const IsPrimNumber = (zipString) => {
-  if (!zipString) return
+export const IsPrimNumber = (zipString: string): boolean => {
+  if (!zipString) return false
 
   const zipArray = zipString.split('')
   let counter = 0

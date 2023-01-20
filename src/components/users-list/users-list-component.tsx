@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { FilteredOnePageData } from '../../customFunctions/paging-function.js'
-import { ResultsType, UsersType } from '../../DATA/data-types.js'
+import { FilteredOnePageData } from '../../customFunctions/paging-function'
+import { ResultsType, UsersType } from '../../DATA/data-types'
 import { MainContext } from '../../main-context/main-context-component'
 import { PagingButtons } from '../paging-buttons/paging-buttons-component'
 import './users-list-component.css'
@@ -12,7 +12,7 @@ export const UsersList = ({ users: usersList }: UsersListType) => {
 
   const { fromToPaging, SetFromToPaging } = useContext(MainContext)
 
-  const [pageUserContent, SetPageUserContent] = useState([])
+  const [pageUserContent, SetPageUserContent] = useState<ResultsType[] | []>([])
   const [filterPageResultNumber, SetFetchPageResultNumber] = useState(0)
 
   //#endregion
