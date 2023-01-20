@@ -9,7 +9,7 @@
     "build": "webpack --mode production"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andras Toth",
   "license": "ISC",
   "dependencies": {
     "jest-transform-css": "^6.0.1",
