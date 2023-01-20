@@ -1,5 +1,5 @@
-import React, { Fragment, SyntheticEvent } from 'react'
 import './gender-option-component.css'
+import React, { Fragment, SyntheticEvent } from 'react'
 
 type GenderOptionType = { handler: (event: SyntheticEvent<HTMLSelectElement>) => void }
 export const GenderOption = ({ handler }: GenderOptionType): JSX.Element => {

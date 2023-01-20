@@ -1,4 +1,8 @@
-export const FilteredOnePageData = (from, to, data) => {
+import { ResultsType } from '../DATA/data-types'
+
+type FilteredOnePageDataType = { from: number; to: number; data: ResultsType[] }
+
+export const FilteredOnePageData = (from: number, to: number, data: ResultsType[]) => {
   let minFrom = from
   let maxTo = to
 

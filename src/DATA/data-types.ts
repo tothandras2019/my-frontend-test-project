@@ -12,9 +12,14 @@ export type ResultsType = {
     postcode: number
     state: string
     street: {}
+    timezone: {}
   }
   login: {}
-  name: {}
+  name: {
+    first: string
+    last: string
+    title: string
+  }
   nat: string
   phone: string
   picture: {}
