@@ -1,10 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { FilteredOnePageData } from '../../customFunctions/paging-function.js'
-import { MainContext } from '../../main-context/main-context-component.jsx'
-import { PagingButtons } from '../paging-buttons/paging-buttons-component.jsx'
+import { ResultsType, UsersType } from '../../DATA/data-types.js'
+import { MainContext } from '../../main-context/main-context-component'
+import { PagingButtons } from '../paging-buttons/paging-buttons-component'
 import './users-list-component.css'
 
-export const UsersList = ({ users: usersList }) => {
+type UsersListType = { users: ResultsType[] }
+export const UsersList = ({ users: usersList }: UsersListType) => {
   //#region VALUES AND HOOKS
   const RESULT_IN_ONE_PAGE = 10
 
