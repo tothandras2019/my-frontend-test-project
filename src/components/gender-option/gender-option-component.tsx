@@ -1,7 +1,8 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, SyntheticEvent } from 'react'
 import './gender-option-component.css'
 
-export const GenderOption = ({ handler }) => {
+type GenderOptionType = { handler: (event: SyntheticEvent<HTMLSelectElement>) => void }
+export const GenderOption = ({ handler }: GenderOptionType): JSX.Element => {
   return (
     <Fragment>
       <label htmlFor='gender-sellection'>Filter gender: </label>

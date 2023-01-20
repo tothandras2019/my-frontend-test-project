@@ -1,9 +1,10 @@
 import './paging-buttons-component.css'
 
 import React, { useContext } from 'react'
-import { MainContext } from '../../main-context/main-context-component.jsx'
+import { MainContext } from '../../main-context/main-context-component'
 
-export const PagingButtons = ({ length, handlePrewPage, handleNextPage }) => {
+type PagingButtonsType = { length: number; handlePrewPage: () => void; handleNextPage: () => void }
+export const PagingButtons = ({ length, handlePrewPage, handleNextPage }: PagingButtonsType): JSX.Element => {
   const { fromToPaging } = useContext(MainContext)
 
   return (

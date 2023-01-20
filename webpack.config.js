@@ -24,6 +24,11 @@ module.exports = {
         },
       },
       {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
         test: /\.(sa|sc|c)ss$/, // styles files
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
@@ -34,5 +39,8 @@ module.exports = {
       },
     ],
   },
-  entry: './src/index.js',
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
+  entry: './src/index.tsx',
 }
